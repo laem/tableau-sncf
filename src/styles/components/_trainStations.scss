@@ -1,0 +1,59 @@
+.train-stations {
+    display: flex;
+    justify-content: space-around;
+    width: 90%;
+    margin: 2rem auto;
+
+    @media screen and (max-width: 900px) {
+        flex-direction: column;
+        min-height: 50vh;
+        width: 40%;
+    }
+
+    @media screen and (max-width: 650px) {
+        min-height: 50vh;
+        width: 80%;
+    }
+
+    &__link {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-decoration: none;
+        color: #0C131F;
+        background-color: #FFFFFF;
+        border-radius: 5px;
+        padding: 1rem 2rem;
+
+        &:hover {
+            cursor: pointer;
+
+            span:after {
+                width: 100%;
+                opacity: 1;
+            }
+        }
+
+        &--active {
+            border: 5px solid #8DE8FE;
+            color: black;
+        }
+
+        span {
+            transition: all 0.5s ease-in-out;
+            position: relative;
+
+            &:after {
+                content: "";
+                position: absolute;
+                bottom: -10px;
+                left: 0;
+                height: 5px;
+                width: 0px;
+                background-color: #8DE8FE;
+                opacity: 0;
+                transition: all 1s ease-in-out;
+            }
+        }
+    }
+}

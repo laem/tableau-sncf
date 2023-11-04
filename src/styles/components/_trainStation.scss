@@ -1,0 +1,48 @@
+.train-station {
+    width: 80%;
+    margin: auto;
+
+    @media screen and (max-width: 650px) {
+        width: 100%;
+    }
+}
+
+.directions {
+    width: 100%;
+
+    &__departures,
+    &__arrivals {
+        width: 50%;
+        font-family: inherit;
+        padding: 0.5rem 0rem;
+        font-size: 1.2rem;
+        border: none;
+        border-radius: 5px 5px 0 0;
+    }
+
+    &__departures {
+        background-color: #123a9f57;
+        color: white;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &--active {
+            background-color: #123a9fab;
+        }
+    }
+
+    &__arrivals {
+        background-color: #28893957;
+        color: white;
+
+        &:hover {
+            cursor: pointer;
+        }
+
+        &--active {
+            background-color: #288939ab;
+        }
+    }
+}

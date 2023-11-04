@@ -1,0 +1,12 @@
+.home {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+
+  &__content-wrapper {
+    width: 80%;
+    background-color: #8DE8FE;
+    border-radius: 10px;
+  }
+}

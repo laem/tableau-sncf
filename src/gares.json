@@ -1,0 +1,34 @@
+{
+  "bordeaux": {
+    "Bordeaux Saint-Jean": "stop_area:SNCF:87581009"
+  },
+  "brest": {
+    "Gare de Brest": "stop_area:SNCF:87474007"
+  },
+  "lille": {
+    "Lille Flandres": "stop_area:SNCF:87286005",
+    "Lille Europe": "stop_area:SNCF:87223263"
+  },
+  "lyon": {
+    "Lyon Part Dieu": "stop_area:SNCF:87723197",
+    "Lyon Perrache": "stop_area:SNCF:87722025"
+  },
+  "marseille": {
+    "Marseille Saint-Charles": "stop_area:SNCF:87751008"
+  },
+  "nantes": {
+    "Gare de Nantes": "stop_area:SNCF:87481002"
+  },
+  "paris": {
+    "Gare de Lyon": "stop_area:SNCF:87686006",
+    "Gare Montparnasse": "stop_area:SNCF:87391003",
+    "Gare de L'Est": "stop_area:SNCF:87113001",
+    "Gare du Nord": "stop_area:SNCF:87271007"
+  },
+  "strasbourg": {
+    "Gare de Strasbourg": "stop_area:SNCF:87212027"
+  },
+  "toulouse": {
+    "Toulouse Matabiau": "stop_area:SNCF:87611004"
+  }
+}

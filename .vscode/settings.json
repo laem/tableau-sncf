@@ -1,0 +1,12 @@
+{
+    "editor.formatOnSave": true,
+    "[javascriptreact]": {
+        "editor.formatOnSave": false
+    },
+    "[javascript]": {
+        "editor.formatOnSave": false
+    },
+    "editor.codeActionsOnSave": {
+        "source.fixAll": true
+    }
+}

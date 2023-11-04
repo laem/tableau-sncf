@@ -1,0 +1,13 @@
+.city {
+    padding: 3rem;
+
+    @media screen and (max-width: 600px) {
+        padding: 3rem 0;
+    }
+
+    &__name {
+        color: #8DE8FE;
+        text-align: center;
+        text-transform: capitalize;
+    }
+}

@@ -1,0 +1,38 @@
+.city-card {
+  width: 30%;
+  height: 10rem;
+  border-radius: 10px;
+  background-position: center;
+  text-decoration: none;
+  margin: 1rem 0;
+
+  @media screen and (max-width: 1200px) {
+    width: 45%;
+  }
+
+  @media screen and (max-width: 700px) {
+    width: 80%;
+  }
+
+  &__name {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: white;
+    text-transform: capitalize;
+    background-color: rgba(59, 59, 59, 0.5);
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    transition: font-size ease-in-out 0.5s;
+  }
+
+  &:hover {
+    cursor: pointer;
+
+    .city-card__name {
+      font-size: 3rem;
+    }
+  }
+}

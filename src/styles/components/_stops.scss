@@ -1,0 +1,15 @@
+.stops {
+    display: flex;
+    align-items: center;
+    animation: scrollText 25s linear infinite;
+}
+
+@keyframes scrollText {
+    0% {
+        transform: translate(0, 0);
+    }
+
+    100% {
+        transform: translate(-200%, 0);
+    }
+}
