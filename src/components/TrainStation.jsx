@@ -3,7 +3,7 @@ import Departures from './Departures'
 import Arrivals from './Arrivals'
 
 function TrainStation() {
-  const [departureMode, setDepartureMode] = useState(true)
+  const [departureMode, setDepartureMode] = useState(false)
 
   return (
     <div className="train-station">
