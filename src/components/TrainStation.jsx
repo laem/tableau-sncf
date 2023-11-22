@@ -8,7 +8,7 @@ function TrainStation() {
   const [searchParams] = useSearchParams()
   const date = searchParams.get('date')
 
-  const sncfDate = date.replace(/-|:|T/g, '') + '00'
+  const sncfDate = `${date.replace(/-|:|T/g, '')}00`
 
   return (
     <div className="train-station">
