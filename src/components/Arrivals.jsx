@@ -4,7 +4,7 @@ import axios from 'axios'
 import { parseUTCDate, getFullMinutes, calculateDelay } from './Utils'
 import Origin from './Origin'
 
-function Arrivals() {
+function Arrivals({ date }) {
   const { codeStation } = useParams()
 
   const [nextArrivals, setNextArrivals] = useState([])
@@ -12,7 +12,9 @@ function Arrivals() {
   useEffect(() => {
     axios
       .get(
-        `https://api.sncf.com/v1/coverage/sncf/stop_areas/${codeStation}/arrivals`,
+        `https://api.sncf.com/v1/coverage/sncf/stop_areas/${codeStation}/arrivals${
+          date ? `?from_datetime=${date}` : ''
+        }`,
         {
           headers: {
             Authorization: `${process.env.REACT_APP_API_KEY}`,

@@ -4,7 +4,7 @@ import axios from 'axios'
 import { parseUTCDate, getFullMinutes, calculateDelay } from './Utils'
 import Stops from './Stops'
 
-function Departures() {
+function Departures({ date }) {
   const { codeStation } = useParams()
 
   // eslint-disable-next-line no-unused-vars
@@ -12,7 +12,9 @@ function Departures() {
 
   useEffect(async () => {
     const response = await axios.get(
-      `https://api.sncf.com/v1/coverage/sncf/stop_areas/${codeStation}/departures`,
+      `https://api.sncf.com/v1/coverage/sncf/stop_areas/${codeStation}/departures${
+        date ? `?from_datetime=${date}` : ''
+      }`,
       {
         headers: {
           Authorization: `${process.env.REACT_APP_API_KEY}`,

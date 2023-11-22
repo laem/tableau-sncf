@@ -1,12 +1,18 @@
 import React, { useState } from 'react'
-import Departures from './Departures'
+import { useSearchParams } from 'react-router-dom'
 import Arrivals from './Arrivals'
+import Departures from './Departures'
 
 function TrainStation() {
   const [departureMode, setDepartureMode] = useState(false)
+  const [searchParams] = useSearchParams()
+  const date = searchParams.get('date')
+
+  const sncfDate = date.replace(/-|:|T/g, '') + '00'
 
   return (
     <div className="train-station">
+      plop {date}
       <div className="directions">
         <button
           type="button"
@@ -29,9 +35,8 @@ function TrainStation() {
           Arrivées
         </button>
       </div>
-
-      {departureMode && <Departures />}
-      {!departureMode && <Arrivals />}
+      {departureMode && <Departures date={sncfDate} />}
+      {!departureMode && <Arrivals date={sncfDate} />}
     </div>
   )
 }
