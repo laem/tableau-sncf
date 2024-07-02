@@ -12,7 +12,6 @@ function TrainStation() {
 
   return (
     <div className="train-station">
-      plop {date}
       <div className="directions">
         <button
           type="button"
